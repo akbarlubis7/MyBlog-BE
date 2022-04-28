@@ -1,0 +1,1 @@
+Rest API of MyBlog Application. Developed using Java Springboot with Postgres as a Database
