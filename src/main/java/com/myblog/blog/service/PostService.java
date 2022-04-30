@@ -1,13 +1,14 @@
 package com.myblog.blog.service;
 
 import com.myblog.blog.dto.PostDto;
+import com.myblog.blog.dto.PostResponse;
 
 import java.util.List;
 
 public interface PostService {
     PostDto createPost(PostDto postDto);
 
-    List<PostDto> getAllPosts();
+    PostResponse getAllPosts(int pageNo, int pageSize, String sortBy, String sortDir);
 
     PostDto getPostById(Long id);
 
